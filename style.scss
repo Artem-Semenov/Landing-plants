@@ -154,15 +154,14 @@ body {
           background: url(img/arrow\ down\ black.svg) right no-repeat;
         }
         
-        .header-call-us {
+        .header-call-us button{
           display: flex;
           align-items: center;
           gap: 10px;
           background: $main-color-light-green;
           padding: 10px 34.5px;
           color: white;
-       
-         font-size: 18px;
+          font-size: 18px;
         }
 
       }
