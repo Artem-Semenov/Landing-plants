@@ -481,8 +481,14 @@ span {
 }
   }
 }
+.mobile-burger-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+}
 .mobile-burger-wrapper {
-
+ opacity: 0;
+visibility: hidden; 
+transition: all ease 0.5s;
   position: fixed;
   z-index: 10;
   background: #0C4B35;
@@ -502,12 +508,11 @@ height: 100%;
 
  > nav {
   >  ul {
-    nav.active {
-      height: fit-content;
-    }
+   
     nav {
       overflow: hidden;
-      height: 0px;
+      max-height: 0;
+      transition: max-height ease-in-out 0.3s;
       ul {
         li{
           a {
