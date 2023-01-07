@@ -404,7 +404,6 @@ border-radius: 5px;
 .why-choose-us {
 background: #0C4B35;
 overflow: hidden;
-height: 627px;
 }
 .why-choose-us-content {
   position: relative;
@@ -573,7 +572,7 @@ color: #FFFFFF;
 }
 
 .working-process-content {
-  padding-top: 50px;
+  padding: 50px 0px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -683,6 +682,139 @@ background: url(img/working-process-tel-icon-green.svg) left no-repeat;
 }
 
 
+.staff-content {
+  font-family: 'Nunito';
+font-style: normal;
+text-align: center;
+padding-bottom: 50px;
+h2 {
+  font-weight: 700;
+font-size: 28px;
+line-height: 38px;
+
+margin-bottom: 15px;
+span {
+  color: $main-color-light-green;
+}
+}
+>.text-wrapper {
+  margin-bottom: 40px;
+  p {
+    font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 30px;
+  }
+  button {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background: #00730C;
+border-radius: 5px;
+color: #fff;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+  }
+}
+.slider-wrapper {
+  .slider-line {
+  
+    .slide {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    
+      .translate {
+        background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+border-radius: 10px;
+        position: absolute;
+        padding-top: 3%;
+        top: 81%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+        transition: all ease 0.4s;
+        h4 {
+          display: flex;
+          flex-direction: column;
+          font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-transform: capitalize;
+color: #FFFFFF;
+span {
+  font-size: 18px;
+line-height: 30px;
+}
+        }
+        .worker-social-links {
+          display: flex;
+
+          .item {
+            width: 30px;
+            height: 30px;
+            background: url(img/linkedin-icon.svg) center no-repeat;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+         /*  .google {
+          }
+          .facebook {
+          }
+          .twitter {
+          }
+          .pinterest {
+          }
+          .linkedin {
+          } */
+        }
+      
+      }
+      .translate.open {
+        top: 0px;
+        padding-top: 50%;
+      }
+    }
+  }
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: relative;
+  bottom: 0px;
+  margin-top: 30px;
+  .swiper-pagination-bullet {
+  
+width: 20px;
+height: 6px;
+background: #00730C;
+border-radius: 8px;
+&.swiper-pagination-bullet-active {
+  width: 50px;
+}
+  }
+}
+}
+
+
+
+
+.pagination {
+}
 
 
 @media (min-width: 640px) {
@@ -754,11 +886,11 @@ div {
         .header-call-us button{
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 5px;
           background: $main-color-light-green;
-          padding: 10px 34.5px;
+          padding: 7px 24.5px;
           color: white;
-          font-size: 18px;
+          font-size: 17px;
         }
 
       }
@@ -915,6 +1047,7 @@ div {
   flex-direction: row-reverse;
   align-items: center;
   .img-wrapper {
+    margin-bottom: 0;
     img {
       width: 542px;
       height: 350px;
@@ -967,7 +1100,53 @@ p {
     }
   }
 }
+.slider-wrapper {
+  .slider-line {
+display: flex;
+gap: 30px;
 
+  }
+}
+
+.staff-content {
+  padding-bottom: 100px;
+  h2 {
+    text-align: left;
+  }
+  >.text-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    text-align: left;
+    p {
+      font-size: 18px;
+line-height: 30px;
+      margin-bottom: 0;
+    }
+    button {
+      flex-shrink: 0;
+      margin: 0;
+    }
+  }
+.slider-wrapper {
+  .slider-line {
+    .slide {
+      .translate {
+        h4 {
+font-size: 20px;
+line-height: 23px;
+          span {
+            font-size: 15px;
+            line-height: 15px;
+          }
+        }
+      }
+      
+    }
+  }
+}
+}
 
 
 }
@@ -981,7 +1160,15 @@ p {
     .header-bottom-content {
     .header-nav {
       gap: 101px;
+      .header-call-us {
+        button{
+          gap: 10px;
+          padding: 10px 34.5px;
+          font-size: 18px;
+        }
+      
     }
+  }
   }
   }
  .main-page-content {
@@ -1024,11 +1211,74 @@ line-height: 51px;
     }
   }
 }
+.working-process-content {
+h2 {
+  font-size: 45px;
+}
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.items-wrapper {
+  .item {
+    h3 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .top-content {
+      div {
+        font-size: 78px;
+      }
+    }
+  }
+}
+footer {
+  p {
+    font-size: 33px;
+    line-height: 45px;
+  }
+  button {
+    padding: 10px 35px;
+    span {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+}
+
+.staff-content {
+  
+    >.text-wrapper {
+      gap: 200px;
+    }
+  .slider-wrapper {
+    .slider-line {
+      .slide {
+        .translate {
+          h4 {
+  font-size: 22px;
+  line-height: 30px;
+            span {
+              font-size: 16px;
+              line-height: 17px;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  }
 }
 
 @media (min-width: 1600px) {
   .container {
-   max-width: 1408px;
+   max-width: 1440px;
   }
  
   .main-page-content {
@@ -1132,4 +1382,30 @@ line-height: 33px;
     }
   }
 }
+.staff-content {
+  >.text-wrapper {
+    gap: 260px;
+    button {
+      padding: 13px 35px;
+      font-size: 18px;
+    }
+  }
+  .slider-wrapper {
+    .slider-line {
+      .slide {
+        .translate {
+          h4 {
+            font-size: 24px;
+            line-height: 33px;
+            span {
+              font-size: 18px;
+line-height: 30px;
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  }
 }
