@@ -75,6 +75,10 @@ body {
   font-weight: 400;
 }
 
+body.scroll-lock {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 15px;
   margin: auto;
@@ -82,8 +86,8 @@ body {
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0px;
   z-index: 11;
 }
@@ -134,6 +138,10 @@ body {
   position: absolute;
   bottom: -30px;
   left: 0px;
+}
+
+main {
+  padding-top: 129px;
 }
 
 .main-page {
@@ -521,6 +529,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 .mobile-burger-content > nav > ul nav {
   overflow: hidden;
@@ -566,6 +575,112 @@ body {
   line-height: 14px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.working-process-content {
+  padding-top: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.working-process-content h2 {
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+.working-process-content h2 span {
+  color: #00730C;
+}
+.working-process-content > p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+  margin-bottom: 30px;
+}
+.working-process-content .items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.working-process-content .items-wrapper .item {
+  background: url(img/working-process-item-flower-bg-s.svg) no-repeat right;
+  flex-basis: 100%;
+  padding: 20px;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 10px;
+}
+.working-process-content .items-wrapper .item .top-content {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.working-process-content .items-wrapper .item .top-content div {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 61px;
+  display: flex;
+  align-items: center;
+  color: #E3E3E3;
+}
+.working-process-content .items-wrapper .item h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #212529;
+}
+.working-process-content .items-wrapper .item p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+}
+.working-process-content footer {
+  padding: 50px 35px;
+  background: url(img/working-process-footer-img-bg-s.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.working-process-content footer p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.working-process-content footer button {
+  background: #FFFFFF;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+.working-process-content footer button span {
+  font-size: 14px;
+  line-height: 19px;
+  color: #00730C;
+  padding-left: 30px;
+  background: url(img/working-process-tel-icon-green.svg) left no-repeat;
 }
 
 @media (min-width: 640px) {
@@ -638,7 +753,6 @@ body {
     display: none;
   }
   .main-page {
-    height: 640px;
     overflow: hidden;
     padding-bottom: 0;
   }
@@ -777,6 +891,37 @@ body {
   }
   .why-choose-us-content .icons-wrapper li {
     justify-content: flex-start;
+  }
+  .working-process-content {
+    padding: 100px 0px;
+  }
+  .working-process-content p {
+    padding: 0px 40px;
+  }
+  .working-process-content .items-wrapper {
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .working-process-content .items-wrapper .item {
+    flex-basis: 25%;
+    padding: 50px 30px 70px 30px;
+  }
+  .working-process-content .items-wrapper .item p {
+    padding: 0;
+  }
+  .working-process-content footer {
+    padding-right: 60px;
+    background: url(img/working-process-footer-img-bg-l.png) center no-repeat;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+  }
+  .working-process-content footer p {
+    -moz-text-align-last: left;
+         text-align-last: left;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

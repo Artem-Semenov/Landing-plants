@@ -40,7 +40,9 @@ body {
  font-weight: 400;
 }
 
-
+body.scroll-lock {
+  overflow: hidden;
+}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -48,7 +50,8 @@ body {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0px;
   z-index: 11;
   .header-top-wrapper {
@@ -109,7 +112,9 @@ background: #fff;
   bottom: -30px;
   left: 0px;
   }
-
+main {
+  padding-top: 129px;
+}
 .main-page {
   padding-bottom: 35px;
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
@@ -505,7 +510,7 @@ height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+overflow: auto;
  > nav {
   >  ul {
    
@@ -567,6 +572,119 @@ color: #FFFFFF;
 }
 }
 
+.working-process-content {
+  padding-top: 50px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  h2 {
+    text-align: center;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 38px;
+span {
+  color: $main-color-light-green
+}
+margin-bottom: 15px;
+  }
+  >p {
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+text-align: center;
+color: #676767;
+margin-bottom: 30px;
+  }
+  .items-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    .item {
+      background: url(img/working-process-item-flower-bg-s.svg) no-repeat right;
+      flex-basis: 100%;
+      padding: 20px;
+box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+border-radius: 10px;
+      .top-content {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        div {
+          font-family: 'Nunito';
+font-style: normal;
+font-weight: 800;
+font-size: 45px;
+line-height: 61px;
+display: flex;
+align-items: center;
+color: #E3E3E3;
+        }
+      }
+
+      h3 {
+        font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+text-transform: capitalize;
+color: #212529;
+      }
+p {
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #676767;
+
+}
+
+
+    }
+  }
+  footer {
+    padding: 50px 35px;
+    background: url(img/working-process-footer-img-bg-s.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+    button {
+      background: #FFFFFF;
+      box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+      border-radius: 5px;
+      padding: 10px 30px;
+      span {
+        font-size: 14px;
+line-height: 19px;
+color: #00730C;
+padding-left: 30px;
+background: url(img/working-process-tel-icon-green.svg) left no-repeat;
+      }
+    }
+  }
+}
+
+
+
+
 @media (min-width: 640px) {
   .container {
     max-width: 610px;
@@ -601,7 +719,7 @@ div {
   .container {
     max-width: 990px;
   }
-  .header  {
+  .header {
     .header-top-content { 
       font-family: 'Poppins', sans-serif;
     }
@@ -655,7 +773,6 @@ div {
   }
 
 .main-page{
-  height: 640px;
   overflow: hidden;
 padding-bottom: 0;
 }
@@ -820,7 +937,36 @@ div {
   }
 }
 }
-
+.working-process-content {
+  padding: 100px 0px;
+  p {
+    padding: 0px 40px;
+  }
+  .items-wrapper {
+    flex-direction: row;
+    gap: 30px;
+margin-bottom: 50px;
+    .item {
+flex-basis: calc(25%);
+padding: 50px 30px 70px 30px;
+p {
+  padding: 0;
+}
+    }
+  }
+  footer {
+    padding-right: 60px;
+    background: url(img/working-process-footer-img-bg-l.png) center no-repeat;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    p {
+      text-align-last: left;
+      margin-bottom: 0;
+    }
+  }
+}
 
 
 
@@ -884,6 +1030,7 @@ line-height: 51px;
   .container {
    max-width: 1408px;
   }
+ 
   .main-page-content {
   
  h1 {

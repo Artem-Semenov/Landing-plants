@@ -3,6 +3,7 @@ const burgerMenu = document.getElementById('burger-menu-wrapper');
 
 burgerBtn.onclick = function(e) {
   burgerMenu.classList.toggle('active')
+  document.body.classList.toggle('scroll-lock');
 } 
 
 const accordButtons = document.querySelectorAll(".clicked");
