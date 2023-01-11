@@ -1056,10 +1056,180 @@ background: #000;
   }
 }
 }
-
-
-.open-close {
+.artickles {
+margin-top: 50px;
 }
+.artickles-content {
+  position: relative;
+  padding-bottom: 30px;
+  font-family: 'Nunito';
+  font-style: normal;
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  span {
+    color: $main-color-light-green;
+  }
+}
+p {
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+text-align: center;
+color: #676767;
+margin-bottom: 40px;
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: relative;
+  bottom: 0px;
+  margin-top: 30px;
+  .swiper-pagination-bullet {
+  
+width: 20px;
+height: 6px;
+background: #00730C;
+border-radius: 8px;
+&.swiper-pagination-bullet-active {
+  width: 50px;
+}
+  }
+}
+}
+
+.artickles-slider {
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+}
+
+.artickles-slide.background-image {
+background: url(img/artickles-slider-bg-img.png) no-repeat;
+background-size: cover;
+}
+.artickles-slide.background-image > p,
+.artickles-slide.background-image > h4,
+.artickles-slide.background-image > .slide-footer,
+.artickles-slide.background-image > .slide-footer > .creator
+ {
+  color: white;
+}
+.artickles-slide {
+  padding: 30px 20px;
+  font-family: 'Nunito';
+  font-style: normal;
+  background: url(img/artickles-slide-bg.png) no-repeat top right;
+  h3 {
+width: fit-content;
+font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+color: #00730C;
+background: #D9F1E0;
+box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+padding: 0 26px;
+margin-bottom: 40px;
+  }
+
+  h4{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;      
+    color: #00730C;
+    padding-right: 70px;
+    margin-bottom: 15px;
+  }
+ p {
+  text-align: left;
+  font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #676767;
+ }
+  .slide-footer {
+ 
+   display: flex;
+   flex-direction:  row;
+   justify-content: space-between;
+   padding: 10px 0;
+   border-top: 1px solid #E3E3E3;
+   color: #676767;
+   font-family: 'Nunito';
+      font-style: normal;
+    .date {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;    
+    }
+    .creator {
+      font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #676767;
+padding-left: 30px;
+background: url(img/admin-icon.svg) left no-repeat;
+    }
+  }
+}
+.photos-line {
+margin-top: 50px;
+}
+.photos-line-content {
+  padding-bottom: 100px;
+}
+.photos-line-slider {
+  margin-bottom: -40px;
+
+}
+.photos-line-wrapper {
+  .swiper-slide {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+.photos-line-text {
+  background: #D9F1E0;
+border-radius: 5px;
+  position: relative;
+  top: 90px;
+  padding: 30px 50px;
+display: flex;
+flex-direction: column;
+gap: 25px;
+  p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #212529;
+    span {
+      color: $main-color-light-green;
+    }
+  }
+  button {
+    background: #00730C;
+    border-radius: 5px;
+    padding: 10px 30px;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: capitalize;
+color: #FFFFFF;
+  }
+}
+
+ 
 @media (min-width: 640px) {
   .container {
     max-width: 610px;
@@ -1462,6 +1632,36 @@ align-items: flex-end;
     padding-right: 00px;
   }
 }
+
+.artickles-content {
+
+  .artickles-slide {
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08)
+
+  }
+  h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+ }
+ .photos-line-text {
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;  
+
+p {
+  font-size: 30px;
+}
+}
+
+
+
+
 }
 
 
@@ -1785,4 +1985,39 @@ line-height: 33px;
     }
   }
   }
+
+  .artickles-content {
+    .artickles-slide {
+      padding: 100px 30px 20px 30px;
+
+h3 {
+  margin-bottom: 75px;
+  padding: 3px 20px;
+}
+h4 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 33px;
+  padding-right: 0;
+}
+      .slide-footer {
+        margin: 0 -30px;
+        padding: 10px 30px;
+      }
+    }
+    h2 {
+    font-size: 45px;
+  }
+  
+  >p {
+    padding: 0px 140px;
+  }
+   }
+   .photos-line-text {
+    padding: 30px 100px;
+
+    p {
+      font-size: 45px;
+    }
+   }
 }

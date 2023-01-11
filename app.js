@@ -57,7 +57,7 @@ function initializeSliderOnResize() {
       spaceBetween: 30,
       pagination: {
         enabled: true,
-        el: ".swiper-pagination",
+        el: ".workers-swiper-pagination",
       },
     });
   } else {
@@ -92,6 +92,72 @@ breakpoints: {
   },
   1024: {
     slidesPerView: 2,
+  },
+}
+}); 
+
+const articklesSwiper = new Swiper(".artickles-slider", {
+  enabled: true,
+  direction: "horizontal",
+  // loop: true,
+  speed: 500,
+  centeredSlides: false,
+  spaceBetween: 30,
+  grabCursor: true,
+pagination: {
+  clickable: true,
+el: '.slider-pagination',
+},
+autoplay: {
+  delay: 3000,
+},
+breakpoints: {
+  360: {
+   
+    slidesPerView: 1,
+  },
+  1024: {
+    slidesPerView: 3, 
+    spaseBetween: 20,
+  },
+  1300: {
+    slidesPerView: 3,
+    spaseBetween: 30,
+  },
+}
+}); 
+
+
+const photosLineSwiper = new Swiper(".photos-line-slider", {
+  enabled: true,
+  direction: "horizontal",
+   loop: true,
+  speed: 500,
+  centeredSlides: false,
+  spaceBetween: 30,
+  simulateTouch: false,
+autoplay: {
+  delay: 2000,
+},
+breakpoints: {
+  360: {
+   
+    slidesPerView: 2,
+  },
+  640: {
+slidesPerView: 3,
+  },
+  1024: {
+    slidesPerView: 4, 
+    spaseBetween: 30,
+  },
+  1200: {
+slidesPerView: 5,
+  },
+  1600: {
+    loop: false,
+    slidesPerView: 6,
+    spaseBetween: 100,
   },
 }
 }); 
