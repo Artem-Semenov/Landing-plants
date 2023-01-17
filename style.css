@@ -1150,10 +1150,6 @@ main {
   margin-top: 50px;
 }
 
-.photos-line-content {
-  padding-bottom: 100px;
-}
-
 .photos-line-slider {
   margin-bottom: -40px;
 }
@@ -1200,6 +1196,179 @@ main {
   line-height: 20px;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+
+.footer {
+  background: #0C4B35;
+  padding-top: 140px;
+}
+
+.footer-content {
+  font-family: "Nunito";
+  font-style: normal;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.footer-content .title-wrap h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.footer-content .title-wrap p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.footer-content .title-wrap .newsletter-form {
+  border-bottom: 1px solid white;
+  display: flex;
+}
+.footer-content .title-wrap .newsletter-form button {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  background: transparent;
+  color: white;
+  display: block;
+  margin-left: auto;
+}
+.footer-content .title-wrap .newsletter-form input {
+  background: transparent;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 5px;
+  color: #FFFFFF;
+}
+.footer-content .title-wrap .newsletter-form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  position: relative;
+  top: 5px;
+}
+.footer-content .title-wrap .newsletter-form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  position: relative;
+  top: 5px;
+}
+.footer-content .title-wrap .newsletter-form input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  position: relative;
+  top: 5px;
+}
+.footer-content .title-wrap .social-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+.footer-content .title-wrap .social-links a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: url(img/facebook-icon.svg) no-repeat center;
+}
+.footer-content .title-wrap .social-links a:hover {
+  background: url(img/facebook-icon-green.svg) no-repeat center white;
+}
+.footer-content .contacts-wrap h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.footer-content .contacts-wrap p:not(p:last-child) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.footer-content .useful-links-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-content .useful-links-wrap h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer-content .useful-links-wrap ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+.footer-content .useful-links-wrap ul li {
+  flex-basis: calc(50% - 5px);
+}
+.footer-content .useful-links-wrap ul li a {
+  color: white;
+  padding-left: 15px;
+  position: relative;
+}
+.footer-content .useful-links-wrap ul li a::before {
+  content: "^";
+  transform: rotate(90deg);
+  position: absolute;
+  left: 0;
+  color: white;
+}
+.footer-content .popular-services-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-content .popular-services-wrap h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer-content .popular-services-wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-content .popular-services-wrap ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+}
+
+.copyright-wrap {
+  padding: 16px 30px 40px 40px;
+  border-top: 1px solid white;
+  color: white;
+}
+.copyright-wrap p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+.copyright-wrap ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.copyright-wrap ul a {
+  color: white;
 }
 
 @media (min-width: 640px) {
@@ -1554,14 +1723,56 @@ main {
     font-size: 18px;
     line-height: 30px;
   }
+  .photos-line-slider {
+    margin-bottom: 0;
+  }
   .photos-line-text {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    top: 40px;
   }
   .photos-line-text p {
     font-size: 30px;
+  }
+  .footer-content {
+    flex-direction: row;
+  }
+  .footer-content .title-wrap {
+    flex-basis: 48%;
+  }
+  .footer-content .title-wrap h2 {
+    margin-bottom: 30px;
+  }
+  .footer-content .contacts-wrap h3 {
+    margin-bottom: 30px;
+  }
+  .footer-content .useful-links-wrap {
+    gap: 30px;
+    flex-basis: 28%;
+  }
+  .footer-content .popular-services-wrap {
+    gap: 30px;
+    flex-basis: 28%;
+  }
+  .copyright-wrap {
+    border: none;
+    padding-top: 30px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright-wrap ul {
+    margin: 0;
+  }
+  .display-mobile {
+    display: none;
+  }
+  .copyright-container {
+    border-top: 1px solid white;
   }
 }
 @media (min-width: 1200px) {
@@ -1806,8 +2017,49 @@ main {
   }
   .photos-line-text {
     padding: 30px 100px;
+    top: 50px;
   }
   .photos-line-text p {
     font-size: 45px;
+  }
+  .footer-content .title-wrap h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .footer-content .title-wrap p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footer-content .popular-services-wrap h3 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .footer-content .popular-services-wrap ul li a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footer-content .useful-links-wrap h3 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .footer-content .useful-links-wrap ul li {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footer-content .contacts-wrap h3 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .footer-content .contacts-wrap p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .copyright-wrap p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .copyright-wrap li {
+    font-size: 16px;
+    line-height: 28px;
   }
 }/*# sourceMappingURL=style.css.map */
