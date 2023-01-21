@@ -289,6 +289,25 @@ main {
   font-style: normal;
   display: flex;
 }
+.second-page-content .second-page-items > li svg {
+  height: 50px;
+  width: 50px;
+}
+.second-page-content .second-page-items > li svg path {
+  fill: #00730C;
+}
+.second-page-content .second-page-items > li:hover {
+  background: url(img/second-page-item-bg.svg) left no-repeat, #00730C;
+}
+.second-page-content .second-page-items > li:hover svg path {
+  fill: #fff;
+}
+.second-page-content .second-page-items > li:hover div h4 {
+  color: #fff;
+}
+.second-page-content .second-page-items > li:hover div p {
+  color: #fff;
+}
 .second-page-content .second-page-items > li div {
   display: flex;
   flex-direction: column;
@@ -1528,6 +1547,10 @@ main {
     background-position: top;
     padding: 60px 43px;
     gap: 50px;
+  }
+  .second-page-content .second-page-items > li svg {
+    width: 70px;
+    height: 70px;
   }
   .second-page-content .second-page-items > li div {
     gap: 10px;

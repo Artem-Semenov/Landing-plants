@@ -264,6 +264,33 @@ gap: 20px;
   font-family: 'Nunito';
   font-style: normal;
   display: flex;
+
+  svg {
+    height: 50px;
+    width: 50px;
+    path {
+      fill:#00730C;
+    }
+  }
+  &:hover {
+    background: url(img/second-page-item-bg.svg) left no-repeat, #00730C;
+svg {
+
+  path {
+fill: #fff;
+  }
+}
+
+div {
+  h4 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+  }
+}
+  }
+ 
 div {
   display: flex;
   flex-direction: column;
@@ -1603,6 +1630,14 @@ background: url(img/arrow-gray-right.svg) right no-repeat;
     background-position: top;
     padding: 60px 43px;
     gap: 50px;
+
+    svg {
+width: 70px;
+height: 70px;
+      path {
+
+      }
+    }
     div {
       gap: 10px;
     }
@@ -2310,3 +2345,4 @@ line-height: 28px;
 }
 }
 }
+
